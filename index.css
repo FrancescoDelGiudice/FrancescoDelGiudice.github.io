@@ -286,10 +286,19 @@
 
 /* ANIMATION */
 
-.floating {
+.floating,
+.floating2 {
   -webkit-animation: floatingAnimation 4s ease-in-out 0s infinite alternate none running;
   animation: floatingAnimation 4s ease-in-out 0s infinite alternate none running;
 }
+
+@media screen and (min-width:1024px) {
+  .floating2 {
+    -webkit-animation: floatingAnimation2 4s ease-in-out 0s infinite alternate none running;
+    animation: floatingAnimation2 4s ease-in-out 0s infinite alternate none running;
+  }
+}
+
 
 @-webkit-keyframes floatingAnimation {
   0% {
@@ -306,5 +315,23 @@
   }
   100% {
     transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes floatingAnimation2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes floatingAnimation2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(20px);
   }
 }
