@@ -505,22 +505,18 @@ IMAGES
 .img-container {
   margin-right:4rem;
   position: relative;
-  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
   border: .1rem solid var(--shadow);
-}
-@media screen and (min-width:768px) {
-  .img-container {
-    width: calc(50% - 8rem);
-  }
 }
 
 .img-container::before {
   content: '';
   position: absolute;
   top: -2rem;
-  left: -4rem;
+  left: -2rem;
   height: 2rem;
-  width: 4rem;
+  width: 2rem;
   border-right: .1rem solid var(--shadow);
   border-bottom: .1rem solid var(--shadow);
 }
@@ -528,11 +524,33 @@ IMAGES
   content: '';
   position: absolute;
   bottom: -2rem;
-  right: -4rem;
+  right: -2rem;
   height: 2rem;
-  width: 4rem;
+  width: 2rem;
   border-left: .1rem solid var(--shadow);
   border-top: .1rem solid var(--shadow);
+}
+
+@media screen and (min-width:768px) {
+  .img-container {
+    width: calc(50% - 4rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img-container {
+    width: calc(50% - 8rem);
+    margin: 0 4rem 0 0;
+  }
+
+  .img-container::before {
+    left: -4rem;
+    width: 4rem;
+  }
+  .img-container::after {
+    right: -4rem;
+    width: 4rem;
+  }
 }
 
 .img-container > img {
