@@ -1,0 +1,590 @@
+:root {
+  --shadow: #232039;
+  --primary: #8EE7B0;
+  --white: #FFFFFF
+}
+
+
+/*********************************************************************************************************
+
+FONT
+
+**********************************************************************************************************/
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-SemiBold.eot');
+  src: url('font/RecoletaAlt-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-SemiBold.woff2') format('woff2'),
+      url('font/RecoletaAlt-SemiBold.woff') format('woff'),
+      url('font/RecoletaAlt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Medium.eot');
+  src: url('font/RecoletaAlt-Medium.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Medium.woff2') format('woff2'),
+      url('font/RecoletaAlt-Medium.woff') format('woff'),
+      url('font/RecoletaAlt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Light.eot');
+  src: url('font/RecoletaAlt-Light.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Light.woff2') format('woff2'),
+      url('font/RecoletaAlt-Light.woff') format('woff'),
+      url('font/RecoletaAlt-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Bold.eot');
+  src: url('font/RecoletaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Bold.woff2') format('woff2'),
+      url('font/RecoletaAlt-Bold.woff') format('woff'),
+      url('font/RecoletaAlt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Regular.eot');
+  src: url('font/RecoletaAlt-Regular.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Regular.woff2') format('woff2'),
+      url('font/RecoletaAlt-Regular.woff') format('woff'),
+      url('font/RecoletaAlt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Black.eot');
+  src: url('font/RecoletaAlt-Black.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Black.woff2') format('woff2'),
+      url('font/RecoletaAlt-Black.woff') format('woff'),
+      url('font/RecoletaAlt-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-SemiBold.eot');
+  src: url('font/Recoleta-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-SemiBold.woff2') format('woff2'),
+      url('font/Recoleta-SemiBold.woff') format('woff'),
+      url('font/Recoleta-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Thin.eot');
+  src: url('font/Recoleta-Thin.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Thin.woff2') format('woff2'),
+      url('font/Recoleta-Thin.woff') format('woff'),
+      url('font/Recoleta-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Black.eot');
+  src: url('font/Recoleta-Black.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Black.woff2') format('woff2'),
+      url('font/Recoleta-Black.woff') format('woff'),
+      url('font/Recoleta-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Bold.eot');
+  src: url('font/Recoleta-Bold.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Bold.woff2') format('woff2'),
+      url('font/Recoleta-Bold.woff') format('woff'),
+      url('font/Recoleta-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/RecoletaAlt-Thin.eot');
+  src: url('font/RecoletaAlt-Thin.eot?#iefix') format('embedded-opentype'),
+      url('font/RecoletaAlt-Thin.woff2') format('woff2'),
+      url('font/RecoletaAlt-Thin.woff') format('woff'),
+      url('font/RecoletaAlt-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Regular.eot');
+  src: url('font/Recoleta-Regular.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Regular.woff2') format('woff2'),
+      url('font/Recoleta-Regular.woff') format('woff'),
+      url('font/Recoleta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Light.eot');
+  src: url('font/Recoleta-Light.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Light.woff2') format('woff2'),
+      url('font/Recoleta-Light.woff') format('woff'),
+      url('font/Recoleta-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('font/Recoleta-Medium.eot');
+  src: url('font/Recoleta-Medium.eot?#iefix') format('embedded-opentype'),
+      url('font/Recoleta-Medium.woff2') format('woff2'),
+      url('font/Recoleta-Medium.woff') format('woff'),
+      url('font/Recoleta-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*, .recoleta-base {
+  font-family: 'Recoleta', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+*::not(.star), *::not(.star>svg) {
+  color: var(--shadow);
+}
+
+
+h1, h2, h3,
+.recoleta-black,
+.recoleta-regular strong {
+  font-family: 'Recoleta', Arial, Helvetica, sans-serif;
+  font-weight: 900 !important;
+  font-style: normal;
+}
+
+/*********************************************************************************************************
+
+OVERFLOW
+
+**********************************************************************************************************/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*********************************************************************************************************
+
+BUTTONS
+
+**********************************************************************************************************/
+
+button {
+  color: var(--shadow);
+  position: relative;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  left: 0.2rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow);
+  z-index:0;
+}
+
+.bg-shadow button::after {
+  background-color: var(--primary);
+}
+
+button > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0.5rem;
+  color: var(--shadow);
+  border: .1rem solid var(--shadow);
+  background-color: var(--white);
+  position: relative;
+  z-index: 1;
+  transition: transform .8s cubic-bezier(1,0,.25,.995);
+}
+
+.bg-shadow button > span {
+  color: var(--shadow);
+  border: .1rem solid var(--primary);
+}
+
+button.round {
+  width: 70px;
+  height: 70px;
+}
+
+button.round.back-hero {
+  width: 40px;
+  height: 40px;
+  transition: opacity .8s cubic-bezier(1,0,.25,.995);
+}
+
+button.round>span,
+button.round::after{
+  border-radius: 50%;
+}
+
+button:hover>span,
+button:hover svg,
+a:hover>svg {
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+button:hover>span {
+  transform: translate(0.1rem, 0.3rem);
+}
+
+a>svg,
+button svg,
+.marquee-banner svg {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  stroke: var(--shadow);
+  transition: opacity .6s cubic-bezier(1,0,.25,.995),transform .6s cubic-bezier(1,0,.25,.995);
+}
+a:hover > svg,
+button:hover svg{
+  transform: translate(.55556vw,-.55556vw);
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+button.back-hero svg {
+  transform: rotate(-45deg);
+  width: 15px !important;
+  height: 15px !important;
+  transition: none !important;
+  opacity: 1 !important;
+  margin-left:0px;
+}
+
+
+
+/*********************************************************************************************************
+
+STICK CONTAINER
+
+**********************************************************************************************************/
+
+
+.stick-container {
+  min-height: 150vh;
+}
+
+/*********************************************************************************************************
+
+BACKGROUND
+
+**********************************************************************************************************/
+
+.bg-grid {
+  background-image: url(images/grid.svg);
+  background-size: 13.2rem 13.2rem;
+  background-repeat: repeat;
+}
+
+/*********************************************************************************************************
+
+STARS
+
+**********************************************************************************************************/
+
+.stars-container {
+  z-index: -1;
+}
+
+.bg-shadow .stars-container {
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  animation-name: twinkle;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.star>svg {
+  color: var(--white);
+}
+
+.star-2 {
+  animation-delay:0.9s;
+}
+.star-3 {
+  animation-delay:2.5s;
+}
+.star-4 {
+  animation-delay:3.7s;
+}
+.star-5 {
+  animation-delay:1.2s;
+}
+.star-6 {
+  animation-delay:4.5s;
+}
+.star-7 {
+  animation-delay:3.0s;
+}
+.star-8 {
+  animation-delay:1.8s;
+}
+.star-9 {
+  animation-delay:0.4s;
+}
+.star-10 {
+  animation-delay:5.2s;
+}
+.star-11 {
+  animation-delay:3s;
+}
+.star-12 {
+  animation-delay:2s;
+}
+
+@keyframes twinkle {
+  30% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+/*********************************************************************************************************
+
+MOVING BANNERS
+
+**********************************************************************************************************/
+
+#rssBlock{
+  top:-10rem;
+  left: 0;
+  background: transparent;
+  position: absolute;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.marquee-banner {
+  display: flex;
+  align-items: center;
+}
+
+.skills-banner {
+  bottom:.2rem;
+}
+
+.marquee-banner:not(.big) {
+  height: 2.5rem;
+  border-top: .1rem solid var(--shadow);
+  border-bottom: .1rem solid var(--shadow);
+}
+
+.marquee-banner--green {
+  background-color: #97D4AE;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee--animating .marquee__inner {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: translate3d(-25%,0,0);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-animation: marqueeAnim 20s linear infinite;
+  animation: marqueeAnim 20s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.marquee-banner__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.marquee-banner__assets {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@-webkit-keyframes marqueeAnim {
+  0% {
+    transform: translate3d(-25%, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes marqueeAnim {
+  0% {
+    transform: translate3d(-25%, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/*********************************************************************************************************
+
+IMAGES
+
+**********************************************************************************************************/
+
+.img-container {
+  margin-right:4rem;
+  position: relative;
+  width: 100%;
+  border: .1rem solid var(--shadow);
+}
+@media screen and (min-width:768px) {
+  .img-container {
+    width: calc(50% - 8rem);
+  }
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: -4rem;
+  height: 2rem;
+  width: 4rem;
+  border-right: .1rem solid var(--shadow);
+  border-bottom: .1rem solid var(--shadow);
+}
+.img-container::after {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  right: -4rem;
+  height: 2rem;
+  width: 4rem;
+  border-left: .1rem solid var(--shadow);
+  border-top: .1rem solid var(--shadow);
+}
+
+.img-container > img {
+  pointer-events: none;
+}
+
+/*********************************************************************************************************
+
+WINDOW ILLUSTRATION
+
+**********************************************************************************************************/
+
+.window-container,
+.window-button,
+.window-address-container,
+.window-avatar-container {
+  border: .1rem solid var(--shadow);
+  z-index: 1;
+}
+
+.window-header-container {
+  border-bottom: .1rem solid var(--shadow);
+}
+
+.window-button {
+  width: 15px;
+  height: 15px;
+}
+
+.window-address-container {
+  height: 15px;
+}
+
+.illustation-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  left: 0.2rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow);
+  z-index:0;
+}
+
+.window-avatar-container {
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+}
+
+.window-avatar {
+  background-image: url('images/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

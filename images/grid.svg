@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+	<title>grid-yellow-svg</title>
+	<style>
+		.s0 { fill: #72b98d } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m199 0h1v200h-1z"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m0 200v-1h199v1z"/>
+</svg>
