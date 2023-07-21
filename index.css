@@ -505,7 +505,7 @@ IMAGES
 .img-container {
   margin-right:4rem;
   position: relative;
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
   margin: 0 auto;
   border: .1rem solid var(--shadow);
 }
@@ -596,8 +596,8 @@ WINDOW ILLUSTRATION
 }
 
 .window-avatar-container {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   overflow: hidden;
 }
 

@@ -1,10 +1,8 @@
-window.addEventListener(
-  'load',
-  () => {
-    initScrollListener()
-  },
-  false
-)
+window.addEventListener('load', () => {
+  console.clear()
+  console.debug('%cGrazie per aver aperto la console! Per qualsiasi info scrivimi ★~(◠‿◕✿)', 'background: #BBF1D0; color: #000')
+  initScrollListener()
+}, false)
 
 function initScrollListener () {
   window.addEventListener('scroll', () => {
